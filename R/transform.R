@@ -20,11 +20,11 @@
 #' spec$variables[[2]]$units <- 'days'
 #' spec$variables[[3]]$label <- 'chick identifier'
 #' spec$variables[[4]]$label <- 'protein diet'
-#' modCW <- transform(spec, Hmisc_label = FALSE)
+#' modCW <- mod(spec, Hmisc_label = FALSE)
 #'
 #' @export
 
-transform <- function(dd, dat, delete = TRUE, modify = TRUE, codefile = '', Hmisc_label = TRUE) {
+mod <- function(dd, dat, delete = TRUE, modify = TRUE, codefile = '', Hmisc_label = TRUE) {
   datname <- dd$name
   if(missing(dat)) dat <- get(datname)
   cur <- datadict(dat)

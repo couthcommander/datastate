@@ -15,13 +15,14 @@
 #' spec$variables[[3]] <- NULL
 #' dd2yaml(spec)
 #'
-#' @aliases yaml2dd
 #' @export
 
 dd2yaml <- function(dd, file = stdout()) {
   yaml::write_yaml(dd, file)
 }
 
+#' @rdname dd2yaml
+#' @export
 yaml2dd <- function(file) {
   yaml::yaml.load_file(file)
 }

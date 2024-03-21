@@ -6,6 +6,8 @@
 \title{Turn Specification into YAML}
 \usage{
 dd2yaml(dd, file = stdout())
+
+yaml2dd(file)
 }
 \arguments{
 \item{dd}{Specification list; this describes the desired state of the data set.}
