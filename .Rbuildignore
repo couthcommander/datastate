@@ -1,0 +1,5 @@
+man-roxygen
+tests/
+^.*\.Rproj$
+^\.Rproj\.user$
+README.md
