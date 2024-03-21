@@ -1,0 +1,16 @@
+Package: datastate
+Type: Package
+Title: Check and Set Dataset State
+Version: 1.0
+Date: 2024-03-19
+Authors@R:
+    c(person("Cole", "Beck", role = c("aut", "cre"),
+           email = "cole.beck@vumc.org",
+           comment = c(ORCID = "0000-0002-6849-6255")))
+Maintainer: Cole Beck <cole.beck@vumc.org>
+Description: Use YAML for data specification.
+License: GPL (>=3)
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Imports: yaml
+Suggests: Hmisc
