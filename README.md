@@ -27,13 +27,13 @@ myfile <- paste0(tempfile(), '.yaml')
 dd2yaml(dd1, file = myfile)
 sprintf('make changes to %s', myfile)
 # directly edit file to do something like this
-#dd1$variables[[1]]$factor[[1]]$label_output <- '1st'
-#dd1$variables[[1]]$factor[[2]]$label_output <- '2nd'
-#dd1$variables[[1]]$factor[[3]]$label_output <- '3rd'
-#dd1$variables[[2]]$recode[[1]]$newvalue <- 'dead'
-#dd1$variables[[2]]$recode[[2]]$newvalue <- 'alive'
-#dd1$variables[[10]]$factor <- NULL
-#dd1$variables[[12]]$factor <- NULL
+#dd1$variables[['pclass']]$factor[[1]]$label_output <- '1st'
+#dd1$variables[['pclass']]$factor[[2]]$label_output <- '2nd'
+#dd1$variables[['pclass']]$factor[[3]]$label_output <- '3rd'
+#dd1$variables[['survived']]$recode[[1]]$newvalue <- 'dead'
+#dd1$variables[['survived']]$recode[[2]]$newvalue <- 'alive'
+#dd1$variables[['cabin']]$factor <- NULL
+#dd1$variables[['boat']]$factor <- NULL
 ```
 
 # Step 4: transform data with specification

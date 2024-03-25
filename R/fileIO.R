@@ -8,11 +8,11 @@
 #' @examples
 #' data(ChickWeight)
 #' spec <- datadict(ChickWeight)
-#' spec$variables[[1]]$units <- 'gm'
-#' spec$variables[[2]]$label <- 'time since birth'
-#' spec$variables[[2]]$units <- 'days'
-#' spec$variables[[4]]$label <- 'protein diet'
-#' spec$variables[[3]] <- NULL
+#' spec$variables[['weight']]$units <- 'gm'
+#' spec$variables$Time$label <- 'time since birth'
+#' spec$variables$Time$units <- 'days'
+#' spec$variables$Diet$label <- 'protein diet'
+#' spec$variables$Chick <- NULL
 #' dd2yaml(spec)
 #'
 #' @export

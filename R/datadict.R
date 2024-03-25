@@ -16,10 +16,11 @@
 datadict <- function(dat) {
   cnames <- names(dat)
   vlist <- vector('list', length(cnames))
+  names(vlist) <- cnames
   for(i in seq_along(cnames)) {
     di <- dat[[i]]
     ai <- attributes(di)
-    vl <- list(name = cnames[i], label = '', units = '')
+    vl <- list(label = '', units = '')
     if('label' %in% names(ai)) vl$label <- ai$label
     if('units' %in% names(ai)) vl$units <- ai$units
     if(is.factor(di)) {

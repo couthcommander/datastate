@@ -16,5 +16,5 @@
 #' @export
 
 varNames <- function(dd) {
-  vapply(dd$variables, `[[`, character(1), 'name')
+  names(dd$variables)
 }
